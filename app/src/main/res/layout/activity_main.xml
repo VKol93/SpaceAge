@@ -13,13 +13,13 @@
         android:text="ENTER YOUR AGE AND PICK THE PLANET TO FIND OUT YOUR AGE ON THE OTHER PLANET ;)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/ageEditText"
+        app:layout_constraintBottom_toTopOf="@+id/convertedAgeTextView"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="32dp"
         />
 
     <EditText
-        android:id="@+id/ageEditText"
+        android:id="@+id/convertedAgeTextView"
         android:layout_width="wrap_content"
         android:inputType="number"
         android:layout_height="wrap_content"
@@ -39,20 +39,20 @@
         android:inputType="textPersonName"
         android:text="Planet"
         android:entries="@array/planets"
-        app:layout_constraintStart_toEndOf="@+id/ageEditText"
+        app:layout_constraintStart_toEndOf="@+id/convertedAgeTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintBottom_toTopOf="@id/calculateButton"/>
 
-    <Button
+    <TextView
         android:id="@+id/calculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/convertedAgeTextView" />
 
 
 
